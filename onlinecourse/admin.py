@@ -6,10 +6,12 @@ from .models import Course, Lesson, Instructor, Learner, Question, Choice
 
 class QuestionInline(admin.StackedInline):
     model = Question
+    extra = 0
 
 
 class ChoiceInline(admin.StackedInline):
     model = Choice
+    extra = 0
 
 
 class LessonInline(admin.StackedInline):
